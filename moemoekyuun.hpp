@@ -1,5 +1,4 @@
-#ifndef _MOE_MOE_KYUUN_H_
-#define _MOE_MOE_KYUUN_H_
+#pragma once
 
 #include <stdio.h>
 #include <sys/types.h>
@@ -9,6 +8,7 @@
 #include <errno.h>
 #include <string.h>
 #include <time.h>
+#include <iostream>
 
 /**************************
  *                        *
@@ -50,14 +50,14 @@
  *                        *
  **************************/
 
-#define desu ;
-#define no .
-#define hai 1
-#define iie 0
-#define nai 0   /* Used instead of NULL */
-#define uso !
-#define onaji ==
-#define ha =
+#define desu    ;
+#define no      .
+#define hai     1
+#define iie     0
+#define nai     0   /* Used instead of NULL */
+#define uso     !
+#define onaji   ==
+#define ha      =
 
 /**************************
  *                        *
@@ -66,44 +66,54 @@
  **************************/
 
 /* I/O functions */
-#define hanashitekudasai(format, ...) printf(format, ##__VA_ARGS__)
-#define kiitekudasai(format, ...) scanf(format, ##__VA_ARGS__)
-#define sukoshihanashite() getchar()
-#define sukoshikiite(ch) putchar(ch)
-#define taihendesuyo(str) perror(str)
+#define hanashitekudasai(format, ...)   printf(format, ##__VA_ARGS__)
+#define kiitekudasai(format, ...)       scanf(format, ##__VA_ARGS__)
+#define sukoshihanashite()              getchar()
+#define sukoshikiite(ch)                putchar(ch)
+#define taihendesuyo(str)               perror(str)
 // sscanf, sprintf, fopen, fclose, fread
 
 /* String functions */
-#define kyarafyuujon(dest, src) strcat(dest, src)
-#define kyaraonaji(str1, str2) strcmp(str1, str2)
-#define kyarakopii(dest, src) strcpy(dest, src)
-#define kyarasagashite(str1, str2) strstr(str1, str2)
+#define kyarafyuujon(dest, src)         strcat(dest, src)
+#define kyaraonaji(str1, str2)          strcmp(str1, str2)
+#define kyarakopii(dest, src)           strcpy(dest, src)
+#define kyarasagashite(str1, str2)      strstr(str1, str2)
 
 /* Math functions */
 // cos, sin, tan, exp, pow, sqrt
 
 /* Random functions */
-#define jikan(t) time(t)
-#define gacha() rand()
-#define gachapon(t) srand(t)
+#define jikan(t)        time(t)
+#define gacha()         rand()
+#define gachapon(t)     srand(t)
 
 /* Process functions */
-#define kodomo() fork()
-#define matte(wstatus) wait(wstatus)
-#define hikikomori case -1
-#define musuko case 0
-#define otoosan default
+#define kodomo()            fork()
+#define matte(wstatus)      wait(wstatus)
+#define hikikomori          case -1
+#define musuko              case 0
+#define otoosan             default
 
 /* Memory functions */
-#define sashiagete(n) malloc(n)
-#define risutowosashiagete(n, m) calloc(n, m)
-#define hima(ptr) free(ptr)
+#define sashiagete(n)               malloc(n)
+#define risutowosashiagete(n, m)    calloc(n, m)
+#define hima(ptr)                   free(ptr)
 
 /* Other functions */
-#define hajimete main
-#define deru(code) exit(code)
+#define hajimete            main
+#define deru(code)          exit(code)
 #define bangounikawaru(str) atoi(str)
-#define nemuru(n) sleep(n)
+#define nemuru(n)           sleep(n)
 // qsort, system
 
-#endif // #ifndef _MOE_MOE_KYUUN_H_
+/**************************
+ *                        *
+ * C++ Specific Keywords  *
+ *                        *
+ **************************/
+
+#define kurasu          class
+#define hanashitakure   cout
+#define nanikaittekure  cin
+#define owO             <<
+#define Owo             >>
