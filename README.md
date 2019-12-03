@@ -1,7 +1,7 @@
-# moelang
-moelang is a C-based pwogwamming language fow moe people (・`ω´・)
+# moeplusplus
+moelang is a C++-based pwogwamming language fow moe people (・`ω´・)
 
-It is actually just a C headew file and a scwipt that calls the C compilew (｡•́︿•̀｡)
+It is actually just a C++ headew file and a scwipt that calls the c++ compilew (｡•́︿•̀｡)
 
 I'm planning on adding mowe keywowds and tools to make this as moe as possible ^w^
 
@@ -9,14 +9,14 @@ I'm planning on adding mowe keywowds and tools to make this as moe as possible ^
 
 Hewe is an example of a moelang pwogwam >w<
 
-```c
+```c++
 bangou hajimete(){
     hanashitekudasai("moshimoshi warudo\n") desu
     kaere 0 desu
 }
 ```
 
-Following is the compwehensive gwammaw of moelang, with the cowwesponding C code ｡ﾟ･ (>﹏<) ･ﾟ｡
+Following is the compwehensive gwammaw of moelang, with the cowwesponding C+ code ｡ﾟ･ (>﹏<) ･ﾟ｡
 
 - [Keywords](./doc/keywords.md)
 - [Special chawactews](./doc/special_characters.md)
