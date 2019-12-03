@@ -1,12 +1,12 @@
 #!/bin/bash
-# This pwogwam compiles .moe files using the gcc compilew UwU
+# This pwogwam compiles .moe files using the g++ compilew UwU
 
-# Twansfowm .moe files into .c files éwé
+# Twansfowm .moe files into .cpp files éwé
 awgs=()
 for cuwwawg in "$@" ; do
     if [[ $cuwwawg =~ \.moe$ ]] ; then
-        cp "$cuwwawg" "${cuwwawg%.moe}.c"
-        awgs+=("${cuwwawg%.moe}.c")
+        cp "$cuwwawg" "${cuwwawg%.moe}.cpp"
+        awgs+=("${cuwwawg%.moe}.cpp")
     elif [[ "$cuwwawg" = "-owo" ]] ; then
 	awgs+=("-o")
     else
@@ -15,7 +15,7 @@ for cuwwawg in "$@" ; do
 done
 
 # Compile the files OwO
-gcc ${awgs[@]} -include moemoekyuun.h
+g++ ${awgs[@]} -include moemoekyuun.hpp
 wesult=$?
 
 # Wetuwn value
@@ -25,9 +25,9 @@ else
     echo "Moe moe kyuun !! (｡>﹏<｡)"
 fi
 
-# Wemove .c tempowawy files
+# Wemove .cpp tempowawy files
 for cuwwawg in "$@" ; do
     if [[ $cuwwawg =~ \.moe$ ]] ; then
-        rm "${cuwwawg%.moe}.c"
+        rm "${cuwwawg%.moe}.cpp"
     fi
 done
