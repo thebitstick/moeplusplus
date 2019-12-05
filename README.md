@@ -11,7 +11,7 @@ Hewe is an example of a moelang pwogwam >w<
 
 ```c++
 bangou hajimete(){
-    hanashitekudasai("moshimoshi warudo\n") desu
+    hanashitakure owO "moshimoshi warudo" owO hajimetenorain desu
     kaere 0 desu
 }
 ```
