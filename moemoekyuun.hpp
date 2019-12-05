@@ -115,5 +115,6 @@
 #define kurasu          class
 #define hanashitakure   cout
 #define nanikaittekure  cin
+#define hajimetenorain  endl
 #define owO             <<
 #define Owo             >>
